@@ -205,7 +205,6 @@ const styles = StyleSheet.create({
     },
     TrackCircleContainer: {
         flexDirection: 'row',
-        backgroundColor:'red'
     },
     greenOuterCircle: {
         height: 24,
