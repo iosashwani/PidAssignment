@@ -118,7 +118,7 @@ const OrderDetail = function () {
                         <Text style={styles.pickFromText}>{item.pickup.address_line_1}</Text>
                     </View>
                 </View>
-                <View style={{ height: 50, width: 1, borderWidth: 1, marginLeft: 10, borderStyle: 'dashed', backgroundColor: '#D3D3D3' }}>
+                <View style={{height: 40, width: 1, borderWidth:1, marginLeft: 10, borderStyle: 'dashed', backgroundColor: '#D3D3D3' }}>
                 </View>
                 <View style={styles.TrackCircleContainer}>
                     <View style={styles.purpleOuterCircleContainer}>
@@ -204,7 +204,8 @@ const styles = StyleSheet.create({
         margin: 15,
     },
     TrackCircleContainer: {
-        flexDirection: 'row'
+        flexDirection: 'row',
+        backgroundColor:'red'
     },
     greenOuterCircle: {
         height: 24,
@@ -320,3 +321,11 @@ export default OrderDetail
 
 
 
+// Remove Duplicate values from Array
+
+// let duplicateArray = [22,12,22,1,98,78,98]
+// removeDuplicateValues = (duplicateArray) => {
+// let uniqueElement = new Set(duplicateArray)// get set of non duplicate let newArray = [...uniqueElement]
+// return newArray
+// }
+// removeDuplicateValues(dublicateArray)
