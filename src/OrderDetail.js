@@ -100,12 +100,8 @@ var order = [
 const OrderDetail = function () {
 
     const Item = ({ item }) => {
-        function newRiderArray(data) {
-            if (data.trip === item.id) {
-                return data.name
-            }
-        }
-        let newArray = riderData.filter(newRiderArray)
+        let newArray = riderData.filter(data => data.name)
+
         return (
             <View style={styles.container}>
                 <View style={styles.TrackCircleContainer}>
